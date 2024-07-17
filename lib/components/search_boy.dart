@@ -6,16 +6,18 @@ import '../constants.dart';
 class SearchBoy extends StatelessWidget {
   const SearchBoy({
     super.key,
+    required this.width,
     required this.hintText,
     required this.controller,
   });
 
   final String hintText;
+  final double width;
   final TextEditingController controller;
 
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width;
+    // double width = MediaQuery.of(context).size.width;
 
     return Row(
       children: [
@@ -25,7 +27,7 @@ class SearchBoy extends StatelessWidget {
             borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(8), bottomLeft: Radius.circular(8)),
           ),
-          width: width * 0.35,
+          width: width,
           height: 40,
           child: TextFormField(
             controller: controller,
