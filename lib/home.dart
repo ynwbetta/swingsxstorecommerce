@@ -1,12 +1,13 @@
 import 'package:ecommerce/components/dropdown_design.dart';
 import 'package:ecommerce/components/option_list.dart';
 import 'package:ecommerce/components/responsive_layout.dart';
+import 'package:ecommerce/footerColumn.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gap/gap.dart';
 import 'buildProductCard.dart';
+import 'components/option_list.dart';
 import 'components/search_boy.dart';
-import 'footerColumn.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -1542,7 +1543,7 @@ class _HomeState extends State<Home> {
                                     TextButton(
                                       onPressed: () {},
                                       child: const Text(
-                                        'support@grandlotto.com',
+                                        'support@swingsxstore.com',
                                         style: TextStyle(color: Colors.white),
                                       ),
                                     ),
@@ -3148,7 +3149,7 @@ class _HomeState extends State<Home> {
                                     TextButton(
                                       onPressed: () {},
                                       child: const Text(
-                                        'support@grandlotto.com',
+                                        'support@swingsxstore.com',
                                         style: TextStyle(color: Colors.white),
                                       ),
                                     ),
@@ -4663,53 +4664,58 @@ class _HomeState extends State<Home> {
                           ),
                           Expanded(
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
+                                const Text(
+                                  'Info',
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      color: Color(0xffFFFFFF),
+                                      fontWeight: FontWeight.w400),
+                                ),
+                                const Gap(20),
                                 TextButton(
                                   onPressed: () {},
                                   child: const Text(
-                                    'Info',
+                                    'About Us',
                                     style: TextStyle(
-                                        fontSize: 20,
+                                        fontSize: 16,
+                                        color: Color(0xffFFFFFF),
                                         fontWeight: FontWeight.w400),
                                   ),
                                 ),
-                                TextButton(
-                                  onPressed: () {},
-                                  child: TextButton(
-                                    onPressed: () {},
-                                    child: const Text(
-                                      'About Us',
-                                      style: TextStyle(
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.w400),
-                                    ),
-                                  ),
-                                ),
+                                const Gap(17),
                                 TextButton(
                                   onPressed: () {},
                                   child: const Text(
                                     'Promotions',
                                     style: TextStyle(
                                         fontSize: 16,
+                                        color: Color(0xffFFFFFF),
                                         fontWeight: FontWeight.w400),
                                   ),
                                 ),
+                                const Gap(17),
                                 TextButton(
                                   onPressed: () {},
                                   child: const Text(
                                     'Terms of Use',
                                     style: TextStyle(
                                         fontSize: 16,
+                                        color: Color(0xffFFFFFF),
                                         fontWeight: FontWeight.w400),
                                   ),
                                 ),
+                                const Gap(17),
                                 TextButton(
                                   onPressed: () {},
                                   child: const Text('Privacy Policy',
                                       style: TextStyle(
                                           fontSize: 16,
+                                          color: Color(0xffFFFFFF),
                                           fontWeight: FontWeight.w400)),
                                 ),
+                                const Gap(17),
                                 TextButton(
                                   onPressed: () {},
                                   child: const Text('Help',
@@ -4721,15 +4727,73 @@ class _HomeState extends State<Home> {
                               ],
                             ),
                           ),
+                          const Gap(50),
                           Expanded(
-                            child: footerColumn('Categories', [
-                              'Fashion',
-                              'Electronics',
-                              'Skin Care',
-                              'Sports',
-                              'Groceries',
-                            ]),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                const Text(
+                                  'Categories',
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      color: Color(0xffFFFFFF),
+                                      fontWeight: FontWeight.w400),
+                                ),
+                                const Gap(20),
+                                TextButton(
+                                  onPressed: () {},
+                                  child: const Text(
+                                    'Fashion',
+                                    style: TextStyle(
+                                        fontSize: 16,
+                                        color: Color(0xffFFFFFF),
+                                        fontWeight: FontWeight.w400),
+                                  ),
+                                ),
+                                const Gap(17),
+                                TextButton(
+                                  onPressed: () {},
+                                  child: const Text('Electronics',
+                                      style: TextStyle(
+                                          fontSize: 16,
+                                          color: Color(0xffFFFFFF),
+                                          fontWeight: FontWeight.w400)),
+                                ),
+                                const Gap(17),
+                                TextButton(
+                                  onPressed: () {},
+                                  child: const Text(
+                                    'Skin Care',
+                                    style: TextStyle(
+                                        fontSize: 16,
+                                        color: Color(0xffFFFFFF),
+                                        fontWeight: FontWeight.w400),
+                                  ),
+                                ),
+                                const Gap(17),
+                                TextButton(
+                                  onPressed: () {},
+                                  child: const Text(
+                                    'Sports',
+                                    style: TextStyle(
+                                        fontSize: 16,
+                                        color: Color(0xffFFFFFF),
+                                        fontWeight: FontWeight.w400),
+                                  ),
+                                ),
+                                const Gap(17),
+                                TextButton(
+                                  onPressed: () {},
+                                  child: const Text('Groceries',
+                                      style: TextStyle(
+                                          fontSize: 16,
+                                          color: Color(0xffFFFFFF),
+                                          fontWeight: FontWeight.w400)),
+                                ),
+                              ],
+                            ),
                           ),
+                          const Gap(50),
                           Expanded(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -4754,7 +4818,7 @@ class _HomeState extends State<Home> {
                                     TextButton(
                                       onPressed: () {},
                                       child: const Text(
-                                        'support@grandlotto.com',
+                                        'support@swingsxstore.com',
                                         style: TextStyle(color: Colors.white),
                                       ),
                                     ),

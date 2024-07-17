@@ -1,4 +1,4 @@
-import 'package:ecommerce/Home.dart';
+import 'package:ecommerce/screen/product.dart';
 import 'package:ecommerce/scrollable.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Home(),
+      home: const Product(),
     );
   }
 }
