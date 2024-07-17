@@ -42,6 +42,7 @@ class _ProductState extends State<Product> {
               ),
               const Gap(111),
               SearchBoy(
+                width: 500,
                 hintText: 'Search for a product',
                 controller: _searchController,
               ),
